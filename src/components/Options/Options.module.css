@@ -1,0 +1,63 @@
+.optionsList {
+  padding: 1rem;
+
+  border-radius: 4px;
+
+  /* height: 3.25rem; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optionsList.optionsBlack {
+  background-color: #10131d;
+  color: #636c85;
+}
+
+.optionsList.optionsWhite {
+  background-color: #bebebe;
+  color: gray;
+}
+
+.optionsList.optionsWhite button {
+  color: gray;
+}
+
+.optionsList span,
+.optionsList button {
+  font-size: 0.675rem;
+}
+
+.optionsList button {
+  background-color: transparent;
+  color: #636c85;
+  cursor: pointer;
+}
+
+.optionsInput {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.optionsInput div label {
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.optionsInput div input:checked ~ label {
+  color: #688ada;
+}
+
+@media (max-width: 322px) {
+  .optionsList span,
+  .optionsList button {
+    font-size: 0.5rem;
+  }
+
+  .optionsInput div label {
+    font-size: 0.675rem;
+  }
+}

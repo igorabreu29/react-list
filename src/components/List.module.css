@@ -1,0 +1,99 @@
+.listContainer {
+  height: 32rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+
+  overflow: auto;
+
+  position: relative;
+}
+
+.select {
+  position: absolute;
+  top: 3.25rem;
+  z-index: 10;
+  right: 0;
+}
+
+.select button {
+  background-color: transparent;
+  color: #7d8699;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.addList {
+  width: 100%;
+  height: 3.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 1rem;
+
+  border-radius: 4px;
+}
+
+.addList.addBlack {
+  background-color: #10131d;
+}
+
+.addList.addWhite {
+  background-color: #f8f8f8c0;
+}
+
+.addList input {
+  width: inherit;
+  padding: 1rem;
+
+  background-color: transparent;
+}
+
+.addList.addBlack input {
+  color: white;
+}
+
+.addList.addWhite input {
+  color: black;
+}
+
+.addList input::placeholder {
+  color: #a2a5bea8;
+}
+
+.addList button {
+  height: 1.5rem;
+  max-width: 1.5rem;
+  width: 100%;
+
+  cursor: pointer;
+
+  background-color: transparent;
+
+  border-radius: 2rem;
+  border: 1px solid #282d3f;
+}
+
+.listContent {
+  /* height: auto; */
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  overflow: auto;
+}
+
+@media (max-width: 322px) {
+  .select button {
+    font-size: 0.675rem;
+  }
+}
