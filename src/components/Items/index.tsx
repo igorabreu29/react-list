@@ -1,6 +1,6 @@
 import { X } from 'phosphor-react';
 import * as React from 'react';
-import { ListContextValues } from '../context/ListContext';
+import { ListContextValues } from '../../context/ListContext';
 import styles from './Items.module.css';
 
 interface ItemListProps {
