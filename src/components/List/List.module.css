@@ -48,11 +48,29 @@
   background-color: #f8f8f8c0;
 }
 
-.addList input {
+.addList div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.addList div input {
   width: inherit;
   padding: 1rem;
 
   background-color: transparent;
+}
+
+.addList div span {
+  color: red;
+
+  position: absolute;
+  left: 1rem;
+  bottom: -1.125rem;
+
+  font-size: 0.875rem;
 }
 
 .addList.addBlack input {
